@@ -107,9 +107,10 @@ body.dark-theme {
 .nav__btns {
   display: flex;
   align-items: center;
-  padding-left: var(--nb-0-5);
+  padding-left: var(--mb-0-5);
   margin: 0;
   margin-top: -5px;
+  gap: var(--mb-0-75);
 }
 
 .change-theme {
@@ -207,6 +208,7 @@ img {
 /* =========== NAV STYLING ========== */
 .nav {
   /* max-width: 968px*/
+  max-width: 968px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -242,7 +244,7 @@ img {
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    bottom: -100;
+    bottom: -100%;
     right: 0;
     left: 0;
     width: 100%;
