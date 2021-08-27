@@ -2,7 +2,23 @@ Header
 Main
   Home
   About
-  Skills and Experience
+  Skills
+  Experience(Education?)
   Portfolio
   Contact me
 Footer
+
+
+
+
+#color
+ICON: 
+Light #F3B7C1 #F5B1B9
+Dark #F571B1
+----
+Hot pink: #E86288
+Fandango pink: #DE5285
+Rose Quot :#F7CAC9
+Serenity :#98ABD1
+Coral: #FF6F61
+Cerulean: #9BB7D4
