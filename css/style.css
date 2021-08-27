@@ -62,7 +62,7 @@
   --mb-1: 1rem;
   --mb-0-1-25: 1.25rem;
   --mb-0-1-5: 1.5rem;
-  --mb-0-2: 2rem;
+  --mb-2: 2rem;
   --mb-0-2-5: 2.5rem;
   --mb-0-3: 3rem;
 
@@ -88,7 +88,7 @@
 /* =========== VARIABLE DARK THEME COLOR ========== */
 body.dark-theme {
   --first-color: hsl(var(--hue-color), 69%, 58%);
-  --first-color--second: hsl(var(--hue-color), 30%, 8%);
+  --first-color--second: hsl(var(--hue-color), 96%, 91%);
   --first-color-alt: #ff6f61; /* Not changed */
   --first-color-lighter: #f3b7c1; /* Not changed */
 
@@ -186,7 +186,7 @@ img {
 
 /* =========== LAYOUT ========== */
 .container {
-  margin-right: var(--mb-1);
+  margin-right: auto;
 }
 
 .grid {
@@ -201,6 +201,7 @@ img {
   right: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  margin-right: var(--mb-0-25);
 }
 
 /* =========== NAV STYLING ========== */
@@ -210,7 +211,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 0;
+  margin-left: var(--mb-0-5);
+  margin-right: var(--mb-0-25);
 }
 
 .nav__logo,
