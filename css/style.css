@@ -6,3 +6,22 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
 font-family: 'Sacramento', cursive;
  */
+
+/* ===========Variable CSS========== */
+:root {
+  --header-height: 3rem;
+
+  /* ====== COLORS ====== */
+
+  /* DECIDE BROWSER THEME */
+  --hue-color: 340;
+
+  /* hsl(var(--hue-color), 69%, 58%)*/
+
+  --first-color: #f5b1b9;
+  --first-color--second: #f571b1;
+  --first-color-alt: #ff6f61;
+  --first-color-lighter: #f3b7c1;
+
+  -text-color: ;
+}
