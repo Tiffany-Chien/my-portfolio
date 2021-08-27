@@ -187,7 +187,7 @@ img {
 
 /* =========== LAYOUT ========== */
 .container {
-  margin-right: auto;
+  margin-right: var(--mb-1);
 }
 
 .grid {
@@ -207,14 +207,13 @@ img {
 
 /* =========== NAV STYLING ========== */
 .nav {
-  /* max-width: 968px*/
   max-width: 968px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: var(--mb-0-5);
-  margin-right: var(--mb-0-25);
+  margin-right: var(--mb-0-5);
 }
 
 .nav__logo,
