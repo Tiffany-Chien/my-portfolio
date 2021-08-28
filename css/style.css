@@ -222,7 +222,7 @@ img {
 
 /* =================== LAYOUT ================== */
 .container {
-  margin-right: var(--mb-1);
+  margin-right: auto;
   color: #fff;
 }
 
@@ -350,25 +350,15 @@ img {
 }
 
 .home__container {
-  display: flex;
-  gap: 1.75rem;
-  padding-left: 0;
-  margin-left: var(--mb-0-5);
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: auto;
+  grid-template-areas: "links marquee dummy";
+  width: 100%;
 }
 
 .home__content {
-  display: grid;
-  /* For icon8 icons */
-  /* <==> grid-template-columns: 0.26fr 1fr */
-  grid-template-columns: 0.08fr 1fr;
-  grid-template-areas: "home__social home__content";
-  padding-top: var(--mb-2-5);
-  height: auto;
-  align-content: space-between;
-  margin-right: var(--mb-0-25);
-  margin-left: 0;
+  grid-area: links;
 }
 
 .home__social {
@@ -387,12 +377,12 @@ img {
 }
 
 .home__social-icon:hover {
-  font-size: 1.25rem;
   color: var(--first-color-alt);
 }
 
 .home__data {
-  grid-area: home__content;
+  grid-area: marquee;
+  width: 100%;
   align-content: center;
   text-align: center;
 }
@@ -496,4 +486,55 @@ img {
 
 .home__scroll-arrow {
   font-size: var(--h3-font-size);
+}
+
+/* ========================= ABOUT ========================= */
+.about {
+  padding-top: 1rem;
+  margin-top: 7rem;
+}
+
+.about__img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: var(--mb-2);
+  display: inline-flex;
+  justify-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+  color: var(--text-color);
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+  font-family: var(--body-font);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
+  font-family: var(--roboto-font);
+  color: var(--first-color--second);
+}
+
+.about__info-name,
+.about__info-title {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
 }
