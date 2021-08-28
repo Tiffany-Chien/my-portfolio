@@ -2,8 +2,10 @@ Header
 Main
   Home
   About
+    left: image | right: text
+    below: experience/education
   Skills
-  Experience(Education?)
+  Past Projects?
   Portfolio
   Contact me
 Footer
