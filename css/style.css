@@ -64,7 +64,7 @@
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
-  --mb-0-3: 3rem;
+  --mb-3: 3rem;
 
   /* ====== Z-INDEX ====== */
   --z-tooltip: 10;
@@ -185,9 +185,45 @@ img {
   text-align: center;
 }
 
+/* =================== BUTTONS STYLING ================== */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  font-weight: var(--font-medium);
+  border: 2px solid white;
+}
+
+.button:hover {
+  background-color: var(--first-color--second);
+}
+
+.button__icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: var(--first-color-lighter);
+}
+
 /* =================== LAYOUT ================== */
 .container {
   margin-right: var(--mb-1);
+  color: #fff;
 }
 
 .grid {
@@ -310,13 +346,16 @@ img {
 .home {
   height: 90vh;
   align-content: space-between;
+  margin-top: var(--mb-3);
 }
 
 .home__container {
-  gap: 1rem;
+  display: flex;
+  gap: 1.75rem;
   padding-left: 0;
   margin-left: var(--mb-0-5);
-  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .home__content {
