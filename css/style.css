@@ -223,7 +223,6 @@ img {
 /* =================== LAYOUT ================== */
 .container {
   margin-right: auto;
-  color: #fff;
 }
 
 .grid {
@@ -344,7 +343,7 @@ img {
 /* ================= HOME ================ */
 
 .home {
-  height: 90vh;
+  height: 70vh;
   align-content: space-between;
   margin-top: var(--mb-3);
 }
@@ -474,6 +473,7 @@ img {
 }
 
 .home__scroll-mouse {
+  margin-top: var(--mb-3);
   font-size: var(--big-font-size);
 }
 
