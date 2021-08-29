@@ -5,10 +5,14 @@ Main
     left: image | right: text
     below: experience/education
   Skills
+    card: software
+    projects
   Past Projects?
   Portfolio
   Contact me
 Footer
+
+
 
 
 
