@@ -1,4 +1,4 @@
-//===================================== DARK THEME //=====================================
+//===================================== DARK THEME =====================================
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";
@@ -34,7 +34,7 @@ themeButton.addEventListener("click", () => {
 });
 console.log("THEME SETTING IS WORKING!");
 
-//===================================== MENU SHOW Y HIDDEN //=====================================
+//===================================== MENU SHOW Y HIDDEN =====================================
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
@@ -56,7 +56,7 @@ if (navClose) {
 }
 
 console.log("MENU Y SETTING WORKING!");
-//===================================== REMOVE MENU PRORFILE //=====================================
+//===================================== REMOVE MENU PRORFILE =====================================
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {

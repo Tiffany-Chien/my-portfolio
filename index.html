@@ -31,11 +31,14 @@
   <!-- Social Media Icons Hover Effect -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-  <!-- Personal Styling -->
-  <link rel="stylesheet" href="css/style.css">
+
   <!-- Animation on scroll -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Tiffany Chien Portfolio</title>
+
+
+  <!-- Personal Styling -->
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -157,7 +160,7 @@
     </section>
 
     <!------------------------- ABOUT ME ------------------------->
-    <section class="about section">
+    <section class="about section" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
       <h2 class="section__title" id="about" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">About
       </h2>
       <span class="section__subtitle">My Introduction</span>
@@ -197,10 +200,32 @@
         <!-- I think I want to add a small screen to show my resume? -->
         <!-- TODO add resume -->
         <div class="about__buttons">
-          <a href="assets/#" download="Tiffany_Chien_Resume" target="_blank" class="button button--flex">
-            Download Resume <i class="uil uil-file-download-alt button__icon"></i> </a>
-        </div>
-      </div>
+          <a href="assets/#" download="Tiffany_Chien_Resume" class="button button--flex" data-toggle="modal"
+            data-target="#myModal">
+            My Resume <i class="uil uil-file-search-alt button__icon"></i> </a>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Tiffany Chien's Resume</h4>
+                </div>
+                <div class="modal-body">
+                  <!-- TODO: put my Resume -->
+                  <embed src="http://www.africau.edu/images/default/sample.pdf" frameborder="0" width="100%"
+                    height="600px">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              <!-- end -->
+
+            </div>
+          </div>
 
 
     </section>
@@ -820,20 +845,22 @@
         <div class="footer__socials_container">
           <ul class="footer__socials">
             <li>
-              <a href="#" class="footer__social">
+              <a href="https://www.facebook.com/TiffanyyyyChien/" class="footer__social">
                 <i class="fab fa-facebook-f icon"></i> </a>
             </li>
             <li>
-              <a href="#" class="footer__social"><i class="fab fa-instagram icon"></i></a>
+              <a href="https://www.instagram.com/veryclefairy/" class="footer__social"><i
+                  class="fab fa-instagram icon"></i></a>
             </li>
             <li>
-              <a href="#" class="footer__social"><i class="fab fa-linkedin-in icon"></i></a>
+              <a href="https://www.linkedin.com/in/tiffanyychien/" class="footer__social"><i
+                  class="fab fa-linkedin-in icon"></i></a>
             </li>
             <li>
-              <a href="#" class="footer__social"><i class="fab fa-twitch icon"></i></a>
+              <a href="https://www.twitch.tv/veryclefairy" class="footer__social"><i class="fab fa-twitch icon"></i></a>
             </li>
             <li>
-              <a href="#" class="footer__social"><i class="fab fa-github icon"></i></a>
+              <a href="https://github.com/Tiffany-Chien" class="footer__social"><i class="fab fa-github icon"></i></a>
             </li>
           </ul>
         </div>
@@ -879,6 +906,7 @@
   <script>
     AOS.init();
   </script>
+
 </body>
 
 </html>

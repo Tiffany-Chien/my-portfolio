@@ -549,6 +549,10 @@ img {
   justify-content: center;
 }
 
+.modal-dialog {
+  max-width: 800px;
+}
+
 /* ========================= SKILLS ========================= */
 
 /* .skills__container {
