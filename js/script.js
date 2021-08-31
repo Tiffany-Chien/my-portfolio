@@ -68,7 +68,7 @@ function linkAction() {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 console.log("Remove menu profile is working!");
 
-//===================================== Typewriter Effect //=====================================
+//===================================== Typewriter Effect =====================================
 
 new Typewriter("#typewriter", {
   strings: ["Tiffany Chien", "CS Student", "Twitch Streamer", "Dietitian"],
@@ -77,3 +77,26 @@ new Typewriter("#typewriter", {
   cursor: "|",
 });
 console.log("Typewriter working!");
+
+//===================================== PORTFOLIO SWIPER =====================================
+
+var swiper = new Swiper(".blog-slider", {
+  cssMode: true,
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+  pagination: {
+    el: ".blog-slider__pagination",
+    clickable: true,
+  },
+  // mousewheel: true,
+  keyboard: true,
+});
+console.log("Swiper working!");
