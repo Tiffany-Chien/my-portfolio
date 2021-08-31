@@ -627,14 +627,14 @@ img {
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
-  position: inherit;
+  position: relative;
   transform: translateX(15%);
   margin-bottom: var(--mb-0-5);
   margin-top: var(--mb-1);
 }
 
 .qualification__button:hover {
-  color: var(--first-color--second);
+  color: var(--first-color-alt);
 }
 
 .qualification__icon {
@@ -651,7 +651,7 @@ img {
   display: block;
   width: 1.5px;
   height: 100%;
-  background-color: var(--first-color);
+  background-color: var(--first-color-lighter);
   align-items: flex-end;
   transform: translateX(20px);
   margin-right: 0;
@@ -659,38 +659,40 @@ img {
 }
 
 .qualification__calendar {
-  font-size: var(--smaller-font-size);
+  font-size: var(--small-font-size);
   color: var(--text-color-light);
-  font-weight: lighter;
 }
-
 .qualification__calendar-icon {
   font-size: var(--normal-font-size);
 }
 
-.qualificationLine__title {
+.qualification__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
-.qualificationLine__subtitle {
+.qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-1);
+  color: var(--text-color);
 }
-
+.transparent_card {
+  /* background-color: var(--background-body-color); */
+  border-color: var(--border-color);
+}
 .mirror-face {
   border: 1px solid #fff;
-  border-radius: 20px;
+  border-radius: 15px;
   font-size: 2rem;
   height: initial;
   overflow: hidden;
   position: relative;
-  border-color: var(--first-color);
+  /* border-color: var(--first-color); */
 }
 
 .task {
-  position: inherit;
+  position: relative;
   overflow: hidden;
   cursor: pointer;
   perspective: 800px;
@@ -723,7 +725,7 @@ img {
   left: 10%;
   right: 10%;
   height: 1px;
-  background-color: var(--first-color-lighter);
+  background: var(--text-color-light);
 }
 
 .task:hover .details {
@@ -732,4 +734,18 @@ img {
   visibility: visible;
   transform: rotateX(0deg);
   transition: 0.8s transform ease;
+}
+.qualification__start {
+  display: inline-flex;
+  width: 14px;
+  height: 14px;
+  margin-top: var(--mb-0-5);
+  justify-content: flex-end;
+  background-color: transparent;
+  border-radius: auto;
+  transform: translate(15px, 10px);
+}
+.qualification__start-icon {
+  font-size: var(--h3-font-size);
+  color: var(--mainText);
 }
