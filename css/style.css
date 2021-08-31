@@ -15,6 +15,8 @@
   --first-color-alt: #ff6f61;
   --first-color-lighter: #f3b7c1;
 
+  --transparent-card-color: #fff;
+  --card-color: #fcd2d8;
   --title-color: hsl(var(--hue-color), 10%, 15%);
   --text-color: hsl(var(--hue-color), 10%, 40%);
   --mainText: hsl(var(--hue-color), 10%, 20%);
@@ -91,6 +93,8 @@ body.dark-theme {
   --first-color--second: hsl(var(--hue-color), 96%, 91%);
   --first-color-alt: #ff6f61; /* Not changed */
   --first-color-lighter: #f3b7c1; /* Not changed */
+  --card-color: black;
+  --transparent-card-color: hsl(var(--hue-color), 30%, 14%);
 
   --title-color: hsl(var(--hue-color), 10%, 95%);
   --text-color: hsl(var(--hue-color), 10%, 75%);
@@ -343,7 +347,7 @@ img {
 /* ================= HOME ================ */
 
 .home {
-  height: 80vh;
+  /* height: 80vh; */
   align-content: space-between;
   margin-top: var(--mb-3);
   padding-bottom: 0;
@@ -571,14 +575,15 @@ img {
   margin: auto;
   backdrop-filter: blur(20px);
   border: 5px solid var(--first-color);
-  background-color: #fcd2d8;
+  background-color: var(--card-color);
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  animation: flipInY;
-  animation-duration: 2.3s;
+.card_skill:hover {
+  transform: scale(1.2);
 }
 
 .card_skill img {
@@ -587,15 +592,6 @@ img {
   min-height: 100%;
 }
 
-/* .contentBox {
-  display: flex;
-  align-content: space-between;
-  text-align: center;
-  position: relative;
-  width: 0%;
-  height: 0%;
-} */
-
 .contentBox h2 {
   align-content: space-between;
   position: relative;
@@ -603,9 +599,7 @@ img {
   font-size: 20px;
   color: var(--text-color);
   text-align: center;
-
-  animation: flipInY;
-  animation-duration: 2.3s;
+  margin-top: 1rem;
 }
 
 .shadow2 {
@@ -673,12 +667,12 @@ img {
 
 .qualification__subtitle {
   display: inline-block;
-  font-size: var(--small-font-size);
+  font-size: 0.9rem;
   margin-bottom: var(--mb-1);
   color: var(--text-color);
 }
 .transparent_card {
-  /* background-color: var(--background-body-color); */
+  background-color: var(--transparent-card-color);
   border-color: var(--border-color);
 }
 .mirror-face {
@@ -931,13 +925,13 @@ img {
   display: inline-flex;
   background-image: linear-gradient(
     147deg,
-    var(--first-color) 0%,
+    var(--first-color) 10%,
     var(--first-color-alt) 47%
   );
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
-  box-shadow: 0px 14px 80px rgba(76, 56, 252, 0.4);
+  box-shadow: 0px 14px 80px rgba(252, 50, 151, 0.4);
   text-decoration: none;
   /* font-weight: 500; */
   justify-content: center;
@@ -1364,7 +1358,7 @@ ul li:nth-child(5) a:before {
     grid-template-columns: max-content 1fr;
   }
   .section {
-    min-height: 60vh;
+    min-height: 90vh;
   }
   .home__data {
     grid-column: initial;
@@ -1459,7 +1453,7 @@ ul li:nth-child(5) a:before {
 
   .home__content {
     padding-top: 2.5rem;
-    column-gap: 2rem;
+    /* column-gap: 2rem; */
   }
 
   .home__scroll-button {
