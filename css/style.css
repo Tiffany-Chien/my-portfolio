@@ -263,7 +263,7 @@ img {
 }
 
 .nav__logo:hover {
-  color: var(--first-color);
+  color: palevioletred;
 }
 
 .nav__toggle {
