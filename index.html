@@ -109,22 +109,27 @@
   <main class="main">
 
     <!------------------------- HOME ------------------------->
+    <div class="overlay"></div>
     <section class="home section" id="home">
+
       <div class="home__container container">
         <div class="home__content grid">
           <div class="home__social">
-            <a href="" target="_blank" class="home__social-icon" id="myLinkedIn">
+            <a href="https://www.linkedin.com/in/tiffanyychien" target="_blank" class="home__social-icon"
+              id="myLinkedIn">
               <img src="img/icon/linkedin.png" />
             </a>
-            <a href="" target="_blank" class="home__social-icon" id="myInstagram">
+            <a href="https://www.instagram.com/veryclefairy/" target="_blank" class="home__social-icon"
+              id="myInstagram">
               <img src="img/icon/instagram.png" />
             </a>
 
-            <a href="" target="_blank" class="home__social-icon" id="myGithub">
+            <a href="https://github.com/Tiffany-Chien" target="_blank" class="home__social-icon" id="myGithub">
               <img src="img/icon/github.png" />
             </a>
 
-            <a href="" target="_blank" class="home__social-icon" id="myFacebook">
+            <a href="https://www.facebook.com/TiffanyyyyChien/" target="_blank" class="home__social-icon"
+              id="myFacebook">
               <img src="img/icon/facebook.png" />
             </a>
 
@@ -136,17 +141,20 @@
           </div>
         </div>
 
-        <div class="home__data">
-          <small class="home_welcome s-color">Welcome to My Portfolio Website</small>
-          <h1 class="home__title">Hi! I'm</h1>
-          <div id="typewriter"></div>
-          <h3 class="home__subtitle" id="home-bio">An aspiring fullstack engineer. bla bla bla.</h3>
 
-          <a href="#contact" class="button button--flex">
+        <div class="home__data">
+          <!-- <small class="home_welcome s-color">Welcome to My Portfolio Website</small> -->
+          <h1 class="home__title">Hi! I'm Tiffany!</h1>
+          <div id="typewriter"></div>
+          <h3 class="home__subtitle" id="home-bio">I am an aspiring fullstack engineer, a programmer, a dietitian, a law
+            school student and also a Twitch streamer. </h3>
+
+          <a href="#contact" class="button button--flex" id="contact_button">
             <!-- TODO: Maybe change this icon -->
             Contact Me <i class="uil uil-message button__icon"></i>
           </a>
         </div>
+
       </div>
       <!-- TODO: Think if this is necessary -->
       <div class="home__scroll">
@@ -161,18 +169,19 @@
 
     <!------------------------- ABOUT ME ------------------------->
     <section class="about section" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-      <h2 class="section__title" id="about" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">About
+      <h2 class="section__title" id="about" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">About Me
       </h2>
-      <span class="section__subtitle">My Introduction</span>
+      <span class="section__subtitle">I love programming! I also have a wide range of hobbies!</span>
 
       <div class="about__containter container grid">
-        <!-- TODO: about me -->
-        <img src="img/aboutme.jpg" alt="my achievement photo" class="about__img">
+
+        <img src="img/me/about.JPG" alt="my photo" class="about__img">
 
         <div class="about__data">
           <p class="about__description" id="home-about">
-            I am a full stack engineer
-            Bla bla bla about
+            I love programming and am deeply fascinated by how much cool things you can do with it. Although my school
+            teaches me mostly back-end development, I self-taught front-end development! I want to become a full
+            stack engineer in the future!
           </p>
         </div>
 
@@ -197,8 +206,7 @@
           <!-- Add work experience year -->
 
         </div>
-        <!-- I think I want to add a small screen to show my resume? -->
-        <!-- TODO add resume -->
+
         <div class="about__buttons">
           <a href="assets/#" download="Tiffany_Chien_Resume" class="button button--flex" data-toggle="modal"
             data-target="#myModal">
@@ -214,9 +222,7 @@
                   <h4 class="modal-title">Tiffany Chien's Resume</h4>
                 </div>
                 <div class="modal-body">
-                  <!-- TODO: put my Resume -->
-                  <embed src="http://www.africau.edu/images/default/sample.pdf" frameborder="0" width="100%"
-                    height="600px">
+                  <embed src="assets/TiffanyChienResume.pdf" frameborder="0" width="100%" height="600px">
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -232,8 +238,8 @@
     <!------------------------- SKILLS ------------------------->
     <section class="skills section" id="skills">
       <h2 class="section__title" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> Skills </h2>
-      <span class="section__subtitle">My
-        skillsets</span>
+      <span class="section__subtitle">I program 80% in Java. <br> I am also a self-taught JavaScript developer!
+        <br> Now I'm learning C/C++ for low level programming.</span>
 
       <div class="skills__container container grid">
         <!-- Each skill container begin -->
@@ -388,9 +394,9 @@
 
     <!------------------------- EDUCATION(QUALIFICATION) ------------------------->
     <section class="qualification section" id="qualification">
-      <h2 class="section__title" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> Education &
-        Experience </h2>
-      <span class="section__subtitle"> My Journey </span>
+      <h2 class="section__title" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> Qualification
+      </h2>
+      <span class="section__subtitle"> My Journey as someone trying to pivot into Tech. </span>
 
       <div class="qualification__container container">
 
@@ -733,14 +739,38 @@
           <!-- project item 1 -->
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-              <img src="" alt="Project Item">
+              <img src="img/project/covid.PNG" alt="Project Item">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">Date</span>
-              <div class="blog-slider__title"> </div>
-              <div class="blog-slider__text"> </div>
-              <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">Repo
-                <i class="uil uil-github-alt button__icon"></i></a>
+              <span class="blog-slider__code">2021 August</span>
+              <div class="blog-slider__title">Covid-19 Tracker</div>
+              <div class="blog-slider__text"> Written
+                in Java. Keep track and detect the vaccination status and flu messages according to
+                location. Show the fully and partial vaccination rate according to given location.</div>
+              <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex" data-toggle="modal"
+                data-target="#projectOne">Locked
+                <i class="uil uil-lock button__icon"></i></a>
+              <div class="modal fade" id="projectOne" role="dialog">
+                <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Project-One</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Sorry this project is not available!</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                  <!-- end -->
+
+                </div>
+              </div>
+
             </div>
           </div>
           <!-- project item 1 end -->
@@ -748,13 +778,15 @@
           <!-- project item 2 -->
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-              <img src="" alt="Project Item">
+              <img src="img/project/TodoDemo.png" alt="Project Item">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">Date</span>
-              <div class="blog-slider__title"> </div>
-              <div class="blog-slider__text"> </div>
-              <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">Repo
+              <span class="blog-slider__code">March 2021</span>
+              <div class="blog-slider__title">Task Management App</div>
+              <div class="blog-slider__text">An application made in React, JavaScript and uses Firebase to keep track of
+                items, timestamps. Uses React to respond cute icons according to user input.</div>
+              <a href="https://github.com/Tiffany-Chien/animal-crossing-todo-list" target="_blank"
+                class="button blog-slider__button button--flex">Repo
                 <i class="uil uil-github-alt button__icon"></i></a>
             </div>
           </div>
@@ -763,13 +795,15 @@
           <!-- project item 3 -->
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-              <img src="" alt="Project Item">
+              <img src="img/project/DM.png" alt="Project Item">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">Date</span>
-              <div class="blog-slider__title"> </div>
-              <div class="blog-slider__text"> </div>
-              <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">Repo
+              <span class="blog-slider__code">July 2021</span>
+              <div class="blog-slider__title">Diabetes Prediction Using Machine Learning</div>
+              <div class="blog-slider__text">Use Machine Learning and PIMA data to predict whether a person is suffering
+                from diabetes or not.</div>
+              <a href="https://github.com/Tiffany-Chien/diabetes-predicting-ML" target="_blank"
+                class="button blog-slider__button button--flex">Repo
                 <i class="uil uil-github-alt button__icon"></i></a>
             </div>
           </div>
@@ -778,13 +812,15 @@
           <!-- project item 4 -->
           <div class="blog-slider__item swiper-slide">
             <div class="blog-slider__img">
-              <img src="" alt="Project Item">
+              <img src="img/project/discordicon.png" alt="Project Item">
             </div>
             <div class="blog-slider__content">
-              <span class="blog-slider__code">Date</span>
-              <div class="blog-slider__title"> </div>
-              <div class="blog-slider__text"> </div>
-              <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">Repo
+              <span class="blog-slider__code">In Progress</span>
+              <div class="blog-slider__title">VeryClefairy's Discord Bot</div>
+              <div class="blog-slider__text">A discord bot written in node.js to learn API libraries, and is used for my
+                personal Twitch Discord.</div>
+              <a href="https://github.com/Tiffany-Chien/vc-discord-bot" target="_blank"
+                class="button blog-slider__button button--flex">Repo
                 <i class="uil uil-github-alt button__icon"></i></a>
             </div>
           </div>
@@ -801,9 +837,9 @@
       <!-- Contact Informaiton -->
       <div class="contact_mail">
 
-        <h2 class="contact__title"> Interested to work together? - <span> Let's talk </span></h2>
+        <h2 class="contact__title"> Feel free to contact me for any suggestions and advice.</h2>
 
-        <form action="#" method="POST" class="cf">
+        <form action="mailto:tiffanychien9@gmail.com" method="POST" class="cf">
           <div class="row">
             <div class="col-lg-6">
               <input type="text" name="message-name" class="form-control form__color mb-30 cf" placeholder="Your Name">
@@ -820,7 +856,7 @@
                 placeholder="Your Message"></textarea>
             </div>
             <div class="col-12">
-              <button type="submit" class="button button--flex send-message form_button">
+              <button type="submit" value="Send" class="button button--flex send-message form_button">
                 Send Message
                 <i class="uil uil-message button__icon"></i>
               </button>
@@ -839,7 +875,9 @@
       <div class="footer__container container grid">
         <div>
           <h1 class="footer__title"> Tiffany Chien </h1>
-          <span class="footer__subtitle"> Aspiring Software Engineer </span>
+          <span class="footer__subtitle"> Software Engineer </span>
+
+
         </div>
 
         <div class="footer__socials_container">
@@ -865,6 +903,11 @@
           </ul>
         </div>
       </div>
+
+      <p class="footer__copy">&#169; All rights reserved</p>
+      <a href="https://icons8.com">
+        <p class="footer__copy" href="https://icons8.com"><a href="https://icons8.com"></a> icon8
+      </a></p>
     </div>
   </footer>
 
