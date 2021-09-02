@@ -128,6 +128,11 @@ body.dark-theme {
   color: var(--first-color);
 }
 
+#theme-button {
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
 /* =============== BASE ============== */
 * {
   box-sizing: border-box;
@@ -277,7 +282,9 @@ img {
 }
 
 .navbar-brand {
-  font-family: var(--robotomono-font);
+  font-family: var(--pacifico-font);
+  text-transform: inherit;
+  font-size: var(--mb-2);
 }
 
 @media screen and (max-width: 768px) {
@@ -1470,6 +1477,7 @@ ul li:nth-child(5) a:before {
 
   .nav__menu {
     margin-left: auto;
+    margin-top: var(--mb-1);
   }
 
   .change-theme {
